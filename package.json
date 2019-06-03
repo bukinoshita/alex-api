@@ -1,0 +1,50 @@
+{
+  "name": "alex-api",
+  "version": "0.0.0",
+  "description": "Catch insensitive, inconsiderate writing",
+  "main": "index.js",
+  "repository": "bukinoshita/alex-api",
+  "author": "bukinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev",
+    "lint": "xo",
+    "test": "nyc ava"
+  },
+  "dependencies": {
+    "alex": "^7.1.0",
+    "micro": "^9.3.4"
+  },
+  "devDependencies": {
+    "ava": "^2.0.0",
+    "eslint-config-prettier": "^4.3.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "micro-dev": "^3.0.0",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "extends": [
+      "prettier"
+    ],
+    "rules": {
+      "new-cap": 0,
+      "node/no-deprecated-api": 0
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --semi false --single-quote --write",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
