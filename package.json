@@ -1,6 +1,6 @@
 {
   "name": "alex-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Catch insensitive, inconsiderate writing",
   "main": "index.js",
   "repository": "bukinoshita/alex-api",
