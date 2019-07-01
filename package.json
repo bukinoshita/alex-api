@@ -20,7 +20,7 @@
     "ava": "2.1.0",
     "eslint-config-prettier": "6.0.0",
     "husky": "2.7.0",
-    "lint-staged": "8.2.1",
+    "lint-staged": "9.0.0",
     "micro-dev": "3.0.0",
     "nyc": "14.1.1",
     "supertest": "4.0.2",
