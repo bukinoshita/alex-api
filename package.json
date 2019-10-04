@@ -13,7 +13,7 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "alex": "^7.1.0",
+    "alex": "^8.0.0",
     "micro": "^9.3.4"
   },
   "devDependencies": {
