@@ -17,7 +17,7 @@
     "micro": "^9.3.4"
   },
   "devDependencies": {
-    "ava": "2.4.0",
+    "ava": "3.0.0",
     "eslint-config-prettier": "6.9.0",
     "husky": "4.0.10",
     "lint-staged": "9.5.0",
