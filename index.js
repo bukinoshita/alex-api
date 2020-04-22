@@ -1,10 +1,11 @@
+// Packages
 const { parse } = require('url')
 const qs = require('querystring')
 const { send } = require('micro')
 const alex = require('alex')
 
-const handleQuery = (request) => {
-  const url = parse(request.url)
+const handleQuery = req => {
+  const url = parse(req.url)
   const query = qs.parse(url.query)
 
   if (query && query.text) {
@@ -14,12 +15,12 @@ const handleQuery = (request) => {
   throw new TypeError('Text is required')
 }
 
-module.exports = async (request, response) => {
+module.exports = async (req, res) => {
   try {
-    const { text } = handleQuery(request)
+    const { text } = handleQuery(req)
     const data = alex(text).messages
-    return send(response, 200, { data })
+    return send(res, 200, { data })
   } catch (error) {
-    return send(response, 400, { error: { message: error.message } })
+    return send(res, 400, { error: { message: error.message } })
   }
 }
