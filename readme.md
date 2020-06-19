@@ -81,7 +81,7 @@ like][literals] are not warned about
 [codecov-badge]: https://img.shields.io/codecov/c/github/bukinoshita/alex-api.svg
 [codecov]: https://codecov.io/github/bukinoshita/alex-api
 [license]: license
-[author]: https://bukinoshita.io
+[author]: https://bukinoshita.com
 [literals]: https://github.com/syntax-tree/nlcst-is-literal#isliteralparent-index
 [profanities]: https://github.com/retextjs/retext-profanities/blob/master/rules.md
 [equality]: https://github.com/retextjs/retext-equality/blob/master/rules.md
